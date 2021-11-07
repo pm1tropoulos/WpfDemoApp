@@ -6,3 +6,4 @@ C:\Users\PANAGIOTIS\source\repos\WPF_Demo_App\DL\DL.Customer\obj\Debug\netcoreap
 C:\Users\PANAGIOTIS\source\repos\WPF_Demo_App\DL\DL.Customer\obj\Debug\netcoreapp3.1\DL.Customer.csproj.CoreCompileInputs.cache
 C:\Users\PANAGIOTIS\source\repos\WPF_Demo_App\DL\DL.Customer\obj\Debug\netcoreapp3.1\DL.Customer.dll
 C:\Users\PANAGIOTIS\source\repos\WPF_Demo_App\DL\DL.Customer\obj\Debug\netcoreapp3.1\DL.Customer.pdb
+C:\Users\PANAGIOTIS\source\repos\WPF_Demo_App\DL\DL.Customer\obj\Debug\netcoreapp3.1\DL.Customer.csprojAssemblyReference.cache
