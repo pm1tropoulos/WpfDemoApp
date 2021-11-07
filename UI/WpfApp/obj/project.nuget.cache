@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vNtFEN1tccPwFm1EIZdVSz+PDB2caEq3qJHqd0gXnF8LjzQbmrz609Ko1fQojEq5IE7LcIE1CUWIwCyhFFaErA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PANAGIOTIS\\source\\repos\\WPF_Demo_App\\UI\\WpfApp\\WpfApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PANAGIOTIS\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
