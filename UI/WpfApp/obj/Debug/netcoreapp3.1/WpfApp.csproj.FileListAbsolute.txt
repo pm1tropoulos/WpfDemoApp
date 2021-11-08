@@ -16,4 +16,3 @@ C:\Users\PANAGIOTIS\source\repos\WPF_Demo_App\UI\WpfApp\obj\Debug\netcoreapp3.1\
 C:\Users\PANAGIOTIS\source\repos\WPF_Demo_App\UI\WpfApp\obj\Debug\netcoreapp3.1\WpfApp.dll
 C:\Users\PANAGIOTIS\source\repos\WPF_Demo_App\UI\WpfApp\obj\Debug\netcoreapp3.1\WpfApp.pdb
 C:\Users\PANAGIOTIS\source\repos\WPF_Demo_App\UI\WpfApp\obj\Debug\netcoreapp3.1\WpfApp.genruntimeconfig.cache
-C:\Users\PANAGIOTIS\source\repos\WPF_Demo_App\UI\WpfApp\obj\Debug\netcoreapp3.1\WpfApp.csprojAssemblyReference.cache
