@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "BL.TaskDemo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DL.Customer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BL.TaskDemo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.TaskDemo.dll": {}
+        }
+      },
+      "DL.Customer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/DL.Customer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DL.Customer.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BL.TaskDemo/1.0.0": {
+      "type": "project",
+      "path": "../../BL/BL.TaskDemo/BL.TaskDemo.csproj",
+      "msbuildProject": "../../BL/BL.TaskDemo/BL.TaskDemo.csproj"
+    },
+    "DL.Customer/1.0.0": {
+      "type": "project",
+      "path": "../../DL/DL.Customer/DL.Customer.csproj",
+      "msbuildProject": "../../DL/DL.Customer/DL.Customer.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "BL.TaskDemo >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\PANAGIOTIS\\.nuget\\packages\\": {},
@@ -39,7 +76,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\PANAGIOTIS\\source\\repos\\WPF_Demo_App\\BL\\BL.TaskDemo\\BL.TaskDemo.csproj": {
+              "projectPath": "C:\\Users\\PANAGIOTIS\\source\\repos\\WPF_Demo_App\\BL\\BL.TaskDemo\\BL.TaskDemo.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

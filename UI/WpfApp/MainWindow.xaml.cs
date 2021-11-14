@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using BL.TaskDemo;
+using System.Windows;
 
 namespace WpfApp
 {
@@ -15,7 +16,15 @@ namespace WpfApp
         private void button_Click(object sender, RoutedEventArgs e)
         {
 
-            MessageBox.Show("Button clicked!!");
+            try
+            {
+                TaskDemo.DoSearch();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show($"A custom exception happened: {ex}");
+                throw;
+            }
         }
     }
 }
