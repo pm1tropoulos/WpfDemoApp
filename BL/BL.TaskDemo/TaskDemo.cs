@@ -18,7 +18,8 @@ namespace BL.TaskDemo
                 return lines;
             });
 
-            var finalTask = loadLinesTask.ContinueWith((completedTask) => {
+            var finalTask = loadLinesTask.ContinueWith((completedTask) =>
+            {
                 var lines = completedTask.Result;
                 var data = new List<Customer>();
                 foreach (var line in lines.Skip(1))
@@ -29,13 +30,12 @@ namespace BL.TaskDemo
                 return data;
             });
 
-            var final = finalTask.ContinueWith((completed)=> 
+            var final = finalTask.ContinueWith((completedTask) =>
             {
-                return completed.Result;
+                return completedTask.Result;
             });
-
             return final.Result;
-        }   
+        }
     }
 
     public static class Helper
