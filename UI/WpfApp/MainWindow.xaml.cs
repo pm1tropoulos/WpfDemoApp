@@ -19,13 +19,16 @@ namespace WpfApp
             try
             {
                 TaskDemo.DoSearch();
+                textBox.Text = "Done!!";
             }
             catch (System.Exception ex)
             {
                 MessageBox.Show($"A custom exception happened: {ex}");
+                textBox.Text = "Fail!!";
                 throw;
             }
         }
+
     }
 }
 
