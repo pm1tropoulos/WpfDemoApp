@@ -8,7 +8,7 @@ namespace BL.TaskDemo
 {
     public static class TaskDemo
     {
-        public static void DoSearch()
+        public static List<Customer> DoSearch()
         {
             var lines = File.ReadAllLines($"C:\\Users\\PANAGIOTIS\\source\\repos\\WPF_Demo_App\\BL\\BL.TaskDemo\\TaskDemo.csv");
             var data = new List<Customer>();
@@ -17,6 +17,7 @@ namespace BL.TaskDemo
                 var customer = Helper.FromCsv(line);
                 data.Add(customer);
             }
+            return data;
         }
     }
 

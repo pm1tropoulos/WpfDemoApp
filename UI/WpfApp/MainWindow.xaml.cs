@@ -1,4 +1,6 @@
 ﻿using BL.TaskDemo;
+using DL.Customer;
+using System.Collections.Generic;
 using System.Windows;
 
 namespace WpfApp
@@ -18,7 +20,8 @@ namespace WpfApp
 
             try
             {
-                TaskDemo.DoSearch();
+                var customers = TaskDemo.DoSearch();
+                dataGrid.ItemsSource = customers;
                 textBox.Text = "Done!!";
             }
             catch (System.Exception ex)
