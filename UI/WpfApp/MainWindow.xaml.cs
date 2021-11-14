@@ -26,8 +26,7 @@ namespace WpfApp
             }
             catch (System.Exception ex)
             {
-                MessageBox.Show($"A custom exception happened: {ex}");
-                textBox.Text = "Fail!!";
+                textBox.Text = ex.Message;
                 throw;
             }
         }
