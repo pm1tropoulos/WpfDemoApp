@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="39,40,0,0" VerticalAlignment="Top" Height="38" Width="119" Click="button_Click"/>
+        <Button x:Name="button" Content="Search" HorizontalAlignment="Left" Margin="39,40,0,0" VerticalAlignment="Top" Height="38" Width="119" Click="button_Click"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="188,43,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" Height="35"/>
         <DataGrid x:Name="dataGrid" Margin="39,90,210,38" AutoGenerateColumns="False"
                   AlternatingRowBackground="PowderBlue">
@@ -16,7 +16,6 @@
                 <DataGridTextColumn Header="Last Name" Binding="{Binding Path=LastName}" Width="150"/>
                 <DataGridTextColumn Header="E-Mail" Binding="{Binding Path=email}" Width="250"/>
             </DataGrid.Columns>
-
-        </DataGrid>
+            </DataGrid>
     </Grid>
 </Window>

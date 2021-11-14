@@ -19,11 +19,11 @@ namespace DL.Customer
         //    _birthDate = birthDate;
         //    _ID = ID;
         //}
-        public static string FirstName { get; set; }
-        public static string LastName { get; set; }
-        public static DateTime BirthDate { get; set; }
-        public static string email { get; set; }
-        public static int ID { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime BirthDate { get; set; }
+        public string email { get; set; }
+        public int ID { get; set; }
 
     }
 }
