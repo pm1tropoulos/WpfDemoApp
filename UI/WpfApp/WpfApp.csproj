@@ -6,4 +6,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\BL\BL.TaskDemo\BL.TaskDemo.csproj" />
+  </ItemGroup>
+
 </Project>
