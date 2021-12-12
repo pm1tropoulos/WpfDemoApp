@@ -1,5 +1,4 @@
 ﻿using DL.Customer;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,7 +9,7 @@ namespace BL.TaskDemo
     public static class TaskDemo
     {
 
-        public static List<Customer> DoSearch()
+        public static Task<List<Customer>> DoSearch()
         {
             var loadLinesTask = Task.Run(() =>
             {
@@ -34,21 +33,7 @@ namespace BL.TaskDemo
             {
                 return completedTask.Result;
             });
-            return final.Result;
-        }
-    }
-
-    public static class Helper
-    {
-        public static Customer FromCsv(string csvLine)
-        {
-            var customerByCsv = new Customer();
-            string[] values = csvLine.Split(',');
-            customerByCsv.ID = Convert.ToInt32(values[0]);
-            customerByCsv.FirstName = Convert.ToString(values[1]);
-            customerByCsv.LastName = Convert.ToString(values[2]);
-            customerByCsv.email = Convert.ToString(values[3]);
-            return customerByCsv;
+            return final;
         }
     }
 }
